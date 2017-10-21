@@ -17,4 +17,9 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            archiveArtifacts '/Users/user/Projects/HSR/Commit to Prod/From-Commit-To-Production/Gadgeothek/app/build/outputs/*.apk'
+        }
+    }
 }
