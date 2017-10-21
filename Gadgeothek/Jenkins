@@ -20,7 +20,8 @@ pipeline {
     }
     post {
         success {
-            archiveArtifacts 'Gadgeothek/app/build/outputs/*.apk'
+            archiveArtifacts '**/outputs/*/*.apk'
+
         }
     }
 }
