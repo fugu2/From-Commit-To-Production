@@ -34,7 +34,7 @@ public class SettingsActivity extends AppCompatActivity implements SharedPrefere
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
         // TODO Turn LibraryService into a proper service!
         if (key.equals(getString(R.string.settings_server_address))) {
-            String address = prefs.getString(key, getString(R.string.settings_default_server));
+            String address = prefs.getString(key, "http://mge1.dev.ifs.hsr.ch/public");
             Log.d(TAG, "Server changed to " + address);
 
             SharedPreferences preferences =

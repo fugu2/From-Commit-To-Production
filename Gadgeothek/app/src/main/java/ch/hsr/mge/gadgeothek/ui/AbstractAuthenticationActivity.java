@@ -91,7 +91,7 @@ public class AbstractAuthenticationActivity extends AppCompatActivity {
 
         String url = preferences.getString(
                 getString(R.string.settings_server_address),
-                getString(R.string.settings_default_server));
+                "http://mge1.dev.ifs.hsr.ch/public");
 
         LibraryService.setServerAddress(url);
 
