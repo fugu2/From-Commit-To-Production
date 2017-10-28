@@ -33,6 +33,7 @@ pipeline {
                 }
         success {
             archiveArtifacts '**/outputs/*/*.apk'
+
         }
     }
 }
