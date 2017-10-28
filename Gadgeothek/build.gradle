@@ -3,13 +3,13 @@
 buildscript {
     repositories {
         jcenter()
-        maven {
+        /*maven {
             url 'https://plugins.gradle.org/m2/'
-        }
+        }*/
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
-        classpath 'gradle.plugin.ch.yvu.teststore:gradle-plugin:0.12'
+        //classpath 'gradle.plugin.ch.yvu.teststore:gradle-plugin:0.12'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -30,13 +30,13 @@ allprojects {
     }
 }
 
-apply plugin: 'ch.yvu.teststore'
+//apply plugin: 'ch.yvu.teststore'
 
-teststore {
+/*teststore {
     host 'test-store.testing-knowhow.ch'
     port  8080
     testSuite '74088914-128a-48e5-9799-deca8fa337ee'
     revision System.properties['revision']
     xmlReports ~/.*\/test-results\/TEST-.*\.xml/
     incremental false
-}
+}*/
