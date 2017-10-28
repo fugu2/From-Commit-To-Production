@@ -28,11 +28,12 @@ pipeline {
                 }
     }
     post {
-        always {
-            cleanWs()
-                }
+
         success {
             archiveArtifacts '**/outputs/*/*.apk'
+        }
+        always {
+            cleanWs()
         }
     }
 }
