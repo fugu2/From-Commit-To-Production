@@ -3,9 +3,7 @@
 buildscript {
     repositories {
         jcenter()
-        /*maven {
-            url 'https://plugins.gradle.org/m2/'
-        }*/
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
@@ -29,14 +27,3 @@ allprojects {
         }
     }
 }
-
-//apply plugin: 'ch.yvu.teststore'
-
-/*teststore {
-    host 'test-store.testing-knowhow.ch'
-    port  8080
-    testSuite '74088914-128a-48e5-9799-deca8fa337ee'
-    revision System.properties['revision']
-    xmlReports ~/.*\/test-results\/TEST-.*\.xml/
-    incremental false
-}*/
