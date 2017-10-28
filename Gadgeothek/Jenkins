@@ -10,8 +10,10 @@ pipeline {
                 sh 'echo Build'
                 sh 'cd Gadgeothek; ./gradlew build'
             }
-            success {
-                archiveArtifacts '**/outputs/*/*.apk'
+            post {
+                success {
+                    archiveArtifacts '**/outputs/*/*.apk'
+                }
             }
         }
 
@@ -31,8 +33,6 @@ pipeline {
                 }
     }
     post {
-
-
         always {
             cleanWs()
         }
