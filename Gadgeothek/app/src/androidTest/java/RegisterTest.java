@@ -28,6 +28,7 @@ public class RegisterTest {
     @Test
     public void showsRegisterActivity() {
         onView(withId(R.id.registerButton)).check(matches(isDisplayed()));
+        
     }
 
 }
